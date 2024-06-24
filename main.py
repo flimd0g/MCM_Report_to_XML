@@ -5,7 +5,7 @@ import openpyxl
 from openpyxl.styles import Alignment
 import os
 
-CONFIG_FILE = "config.txt"
+CONFIG_FILE = "config_mcm.txt"
 
 def load_configuration():
     if os.path.isfile(CONFIG_FILE):
