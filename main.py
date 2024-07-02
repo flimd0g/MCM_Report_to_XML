@@ -47,7 +47,7 @@ def parse_html(file_path):
 
     keys_to_extract = [
         'MCM hardware class', 'MCM version', 'MCM diagnosis version', 'MCM VIN', 'MCM serial number',
-        'MCM hardware part number', 'MCM certification', 'MCM hardware version'
+        'MCM hardware part number', 'MCM certification', 'MCM hardware version', 'MCM engine number'
     ]
 
     extracted_values = {key: None for key in keys_to_extract}
@@ -85,7 +85,8 @@ def update_excel(extracted_values, job_number, vehicle_type, excel_path):
         'MCM certification': 'Certification',
         'MCM hardware version': 'Hardware Version',
         'Job number': 'Fixably No.',
-        'Vehicle Type': 'Vehicle Type'
+        'Vehicle Type': 'Vehicle Type',
+        'MCM engine number': 'Engine Number'
     }
 
     header_row_index = None
